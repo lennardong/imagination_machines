@@ -52,7 +52,6 @@ Given our focus on core thinking patterns, we'll skip:
 
 You'll gain the foundational thinking that makes learning these tools straightforward later.
 
----
 ## 🗺 Course Outline
 - For each week, please see the relevant folder's `README.md` file.
 - Each week's puzzle, etc will be issued on the Monday class.
