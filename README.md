@@ -106,8 +106,8 @@ I'm here to share the joy of building things through code with you.
 
 Some bullets:
 - I like building things.
-- I spent 10 years building buildings, now I build software. 
-- My specialization is in Backend Systems & Machine Learning.
+- I used to build buildings, now I build software. 
+- I spend alot of time thinking about software systems and finding patterns in numbers (aka machine learning). 
 
 If it matters to you, you can find more about me here: 
 LinkedIn (https://www.linkedin.com/in/lennardong/)
@@ -143,7 +143,4 @@ Given our focus on core thinking patterns, we'll skip:
 
 You'll gain the foundational thinking that makes learning these tools straightforward later.
 
-If it really matters...
-- my LinkedIn: https://www.linkedin.com/in/lennardong/
-- my personal website: https://lennardong.com/
 
