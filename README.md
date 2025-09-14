@@ -1,4 +1,4 @@
-# Imagination Machines
+## Imagination Machines
 
 ![Turing Machine](assets/turing-machine.jpg)
 
@@ -53,16 +53,16 @@ Given our focus on core thinking patterns, we'll skip:
 You'll gain the foundational thinking that makes learning these tools straightforward later.
 
 ---
-# Course Outline
+## Course Outline
 - For each week, please see the relevant folder's `README.md` file.
 - Each week's puzzle, etc will be issued on the Monday class.
 
-## Week 0‍⃣: Prep
+### Week 0: setup
 This is basic setup for the course. 
 Please read through and complete before the first class.
 
-## Week 1‍⃣: "What Does This Thing Do?" 
-> Designing Ideas
+### Week 1: What Does This Thing Do?
+> Ideas as Abstract Machines
 
 **The Mystery**: Students get 3 working code samples (no explanation) and must figure out what each does through experimentation.
 
@@ -77,7 +77,7 @@ Tuesday (Learn Later):
 
 **Takehome**: Create a system diagram for rock-paper-scissors (no code yet).
 
-## Week 2‍⃣: "Why Won't This Decide?" 
+### Week 2: Why Won't This Decide?"
 > Logical Machines
 
 **The Mystery**: Students get broken decision-making code that can't choose rock/paper/scissors properly.
@@ -93,7 +93,7 @@ Tuesday (Learn Later):
 
 **Takehome**: Complete rock-paper-scissors logic (console-based)
 
-## Week 3‍⃣: "Why Can't I Touch It?" 
+### Week 3: "Why Can't I Touch It?" 
 > Interacting with an idea
 
 **The Mystery**: Students have working logic but no way for humans to interact with it.
@@ -109,7 +109,7 @@ Tuesday (Learn Later):
 
 **Takehome**: Create UI for your game (no logic connection yet)
 
-## Week 4‍⃣: "Why Are These Two Things Ignoring Each Other?"
+### Week 4: "Why Are These Two Things Ignoring Each Other?"
 > Connecting the two parts
 
 **The Mystery**: Students have working logic AND working UI, but they don't talk to each other.
@@ -125,11 +125,11 @@ Tuesday (Learn Later):
 
 **Takehome**: Complete integrated game. Followup TBC.
 
-## Q&A
+### Q&A
 - Any questions will be submitted onto the discussion board of this repo: https://github.com/lennardong/imagination_machines/discussions
 
 
-# 👋 About the Instructor
+## 👋 About the Instructor
 
 Hi, I'm Lennard. 
 I'm here to share the joy of building things through code with you.
