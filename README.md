@@ -81,7 +81,8 @@ Tuesday (Learn Later):
 **Takehome**: Create UI for your game (no logic connection yet)
 
 ### Week 4: Connecting the two parts
-
+> It lives!
+> 
 **The Mystery**: Students have working logic AND working UI, but they don't talk to each other.
 
 Monday (Do First):
