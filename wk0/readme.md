@@ -86,7 +86,7 @@ This hands-on tinkering is exactly the approach we'll use for the weekly puzzles
 
 # Troubleshooting
 
-## "Reopen in Container" doesn't appear
+### "Reopen in Container" doesn't appear
 **Problem**: VSCode doesn't prompt to reopen in container when opening the folder.
 
 **Solutions**:
@@ -95,7 +95,7 @@ This hands-on tinkering is exactly the approach we'll use for the weekly puzzles
 - Manually trigger: Command Palette (Ctrl+Shift+P) → "Dev Containers: Reopen in Container"
 - Restart VSCode and try opening the folder again
 
-## "Open with Live Server" missing from right-click menu
+### "Open with Live Server" missing from right-click menu
 **Problem**: Right-clicking on `test-setup.html` doesn't show Live Server option.
 
 **Solutions**:
@@ -104,7 +104,7 @@ This hands-on tinkering is exactly the approach we'll use for the weekly puzzles
 - Verify extension installed: Check Extensions panel for "Live Server" by Ritwick Dey
 - Try opening the file first, then using Command Palette to start Live Server
 
-## Browser shows "This site can't be reached" or file:// URL
+### Browser shows "This site can't be reached" or file:// URL
 **Problem**: Browser opens wrong URL or can't connect to Live Server.
 
 **Solutions**:
