@@ -27,7 +27,7 @@ By course completion, students will:
 ## 📚 Technology Stack
 
 We will use the VSCode IDE for this course. 
-- **Docker**: Provides a consistent environment (used as a black box)
+- **Docker & DevContainers**: Provides a consistent environment (used as a black box)
 - **HTML**: Single file for displaying the game interface
 - **CSS**: Single file for styling and layout
 - **JavaScript**: Single file for game logic and interactivity
