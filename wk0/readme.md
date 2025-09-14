@@ -1,10 +1,12 @@
-# Week 0: Course Prep
+# Week 0
+
+## Course Prep
 **Goal**: Get your tools ready and your mind prepared for puzzle-solving
 
-## Why This Matters
+### Why This Matters
 You're about to reverse-engineer mysterious code and debug broken systems. Having a reliable development environment means you can focus on the fun detective work instead of fighting with setup issues.
 
-## Checklist
+### Checklist
 
 **Setup (do in order), ~1h:**
 - [ ] Create a dedicated class folder: `imagination_machines` somewhere easy to find (Desktop or Documents)
@@ -27,7 +29,7 @@ You're about to reverse-engineer mysterious code and debug broken systems. Havin
 - WSL2: https://learn.microsoft.com/en-us/windows/wsl/install
 - Docker: https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers
 
-## Definition of Done
+### Definition of Done
 By Week 1, you should be able to:
 - Open VSCode and create a new file
 - Right-click `test-setup.html` and select "Open with Live Server"
@@ -35,7 +37,7 @@ By Week 1, you should be able to:
 - Feel comfortable navigating the interface
 - Understand why we're starting with puzzles instead of lectures
 
-# Assigned Readings
+## Assigned Readings
 
 **Practical Skills:**
 - Getting Started with VSCode: https://www.youtube.com/watch?v=ORrELERGIHs&t=103s
@@ -46,11 +48,11 @@ By Week 1, you should be able to:
 
 
 
-# Bonus: Hack the Test File
+## Bonus: Hack the Test File
 
 **Goal**: Get comfortable breaking things and seeing what happens. This is how you'll learn to debug in Week 2-4.
 
-## Experiments to Try
+### Experiments to Try
 With `test-setup.html` open and Live Server running, try these modifications and watch the changes appear instantly:
 
 **Text Hacking:**
@@ -74,7 +76,7 @@ With `test-setup.html` open and Live Server running, try these modifications and
 - Remove the `onclick="testClick()"` from the button - what happens?
 - Add random text outside the `<script>` tags
 
-## What You're Learning
+### What You're Learning
 - **Live feedback loop**: Change → Save → See result immediately
 - **Cause and effect**: Understanding how code changes affect behavior
 - **Debugging mindset**: When something breaks, you can fix it
@@ -84,7 +86,7 @@ With `test-setup.html` open and Live Server running, try these modifications and
 
 This hands-on tinkering is exactly the approach we'll use for the weekly puzzles.
 
-# Troubleshooting
+## Troubleshooting
 
 ### "Reopen in Container" doesn't appear
 **Problem**: VSCode doesn't prompt to reopen in container when opening the folder.
