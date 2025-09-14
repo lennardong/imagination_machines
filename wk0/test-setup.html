@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup Test - Imagination Machines</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f8ff;
+        }
+        .success {
+            color: #28a745;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 Environment Test</h1>
+    <p class="success">✅ If you can see this page, your setup is working!</p>
+    
+    <button onclick="testClick()">Click me to test JavaScript</button>
+    <p id="result"></p>
+
+    <script>
+        function testClick() {
+            document.getElementById('result').innerHTML = 
+                '<span style="color: green; font-weight: bold;">🚀 JavaScript is working! You\'re ready for Week 1.</span>';
+        }
+    </script>
+</body>
+</html>
