@@ -32,10 +32,10 @@ By course completion, students will:
 This is basic setup for the course. 
 Please read through and complete before the first class.
 
-### Week 1: What Does This Thing Do?
-> Ideas as Abstract Machines
+### Week 1: Mapping Ideas as a Machine
+> "What Does This Thing Do?"
 
-**The Mystery**: Students get 3 working code samples (no explanation) and must figure out what each does through experimentation.
+**The Mystery**: Students get 3 working code samples (no explanation) and must figure out what each does through deductive reasoning.
 
 Monday (Do First):
 - 0-45min: Reverse-engineer mystery code samples
@@ -48,8 +48,8 @@ Tuesday (Learn Later):
 
 **Takehome**: Create a system diagram for rock-paper-scissors (no code yet).
 
-### Week 2: Why Won't This Decide?"
-> Logical Machines
+### Week 2: Building Logical Machines
+> "Why Won't This Decide?"
 
 **The Mystery**: Students get broken decision-making code that can't choose rock/paper/scissors properly.
 
@@ -64,8 +64,8 @@ Tuesday (Learn Later):
 
 **Takehome**: Complete rock-paper-scissors logic (console-based)
 
-### Week 3: "Why Can't I Touch It?" 
-> Interacting with an idea
+### Week 3: UI
+> "How do I touch an idea?"
 
 **The Mystery**: Students have working logic but no way for humans to interact with it.
 
@@ -80,8 +80,7 @@ Tuesday (Learn Later):
 
 **Takehome**: Create UI for your game (no logic connection yet)
 
-### Week 4: "Why Are These Two Things Ignoring Each Other?"
-> Connecting the two parts
+### Week 4: Connecting the two parts
 
 **The Mystery**: Students have working logic AND working UI, but they don't talk to each other.
 
@@ -109,6 +108,10 @@ Some bullets:
 - I like building things.
 - I spent 10 years building buildings, now I build software. 
 - My specialization is in Backend Systems & Machine Learning.
+
+If it matters to you, you can find more about me here: 
+LinkedIn (https://www.linkedin.com/in/lennardong/)
+Personal Blog (https://lennardong.com/)
 
 ## FAQ
 
