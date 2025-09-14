@@ -6,41 +6,108 @@
     <title>Setup Test - Imagination Machines</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'JetBrains Mono', 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Droid Sans Mono', 'Courier New', monospace;
+            background-color: #f5f5f5;
+            color: #333333;
+            padding: 20px;
+            margin: 0;
+            line-height: 1.2;
+            font-weight: 300;
+        }
+        .terminal {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+        }
+        .header {
+            color: #333333;
             text-align: center;
-            padding: 50px;
-            background-color: #f0f8ff;
+            margin-bottom: 20px;
+            font-weight: 300;
         }
-        .success {
-            color: #28a745;
-            font-size: 24px;
+        .header h1 {
+            font-family: inherit;
+            font-weight: 300;
+            margin: 0;
+        }
+        .ascii-art {
+            color: #666666;
+            font-size: 12px;
+            text-align: center;
             margin: 20px 0;
+            white-space: pre;
         }
-        button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 5px;
+        .status {
+            color: #333333;
+            margin: 10px 0;
+        }
+        .command-button {
+            background-color: #ffffff;
+            color: #333333;
+            border: 1px solid #cccccc;
+            padding: 8px 16px;
+            font-family: inherit;
+            font-size: 14px;
             cursor: pointer;
+            margin: 10px 0;
+            font-weight: 300;
         }
-        button:hover {
-            background-color: #0056b3;
+        .command-button:hover {
+            background-color: #f0f0f0;
+            border-color: #999999;
+        }
+        .output {
+            margin-top: 10px;
+            padding: 10px 0;
+            background-color: #ffffff;
+            border-top: 1px solid #e0e0e0;
+        }
+        .prompt {
+            color: #666666;
         }
     </style>
 </head>
 <body>
-    <h1>🎉 Environment Test</h1>
-    <p class="success">✅ If you can see this page, your setup is working!</p>
-    
-    <button onclick="testClick()">Click me to test JavaScript</button>
-    <p id="result"></p>
+    <div class="terminal">
+        <div class="header">
+            <h1>IMAGINATION MACHINES</h1>
+            <div class="ascii-art">
+╔══════════════════════════════════════╗
+║  ┌─┐┬ ┬┌─┐┌┬┐┌─┐┌┬┐  ┌┬┐┌─┐┌─┐┌┬┐  ║
+║  └─┐└┬┘└─┐ │ ├┤ │││   │ ├┤ └─┐ │   ║
+║  └─┘ ┴ └─┘ ┴ └─┘┴ ┴   ┴ └─┘└─┘ ┴   ║
+╚══════════════════════════════════════╝
+            </div>
+        </div>
+        
+        <div class="status">
+            <span class="prompt">C:\IMAGINATION&gt;</span> CHECKING ENVIRONMENT...
+        </div>
+        
+        <div class="status">
+            [OK] HTML RENDERER<br>
+            [OK] CSS PROCESSOR<br>
+            [??] JAVASCRIPT ENGINE
+        </div>
+        
+        <button class="command-button" onclick="testClick()">
+            RUN TEST
+        </button>
+        
+        <div id="result" class="output"></div>
+    </div>
 
     <script>
         function testClick() {
             document.getElementById('result').innerHTML = 
-                '<span style="color: green; font-weight: bold;">🚀 JavaScript is working! You\'re ready for Week 1.</span>';
+                '<span class="prompt">C:\\IMAGINATION&gt;</span> JSTEST.EXE<br>' +
+                '[OK] JAVASCRIPT ENGINE<br>' +
+                '[OK] ALL SYSTEMS OPERATIONAL<br>' +
+                '[OK] READY FOR WEEK 1<br>' +
+                '<br>' +
+                'WELCOME TO THE MACHINE.';
         }
     </script>
 </body>
