@@ -1,6 +1,6 @@
 # Imagination Machines
 
-<img src="assets/early_flying_machine.jpg" alt="Early Flying Machine" width="444400">
+<img src="assets/early_flying_machine.jpg" alt="Early Flying Machine" width="300">
 
 `Imagination Machines` is a 4-week, 8-lesson course where first-time coders discover how to transform ideas into working software through hands-on exploration.
 
