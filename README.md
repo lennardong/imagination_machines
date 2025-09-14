@@ -24,34 +24,6 @@ By course completion, students will:
 - [ ] Debug code 
 - [ ] Design and implement simple interactive user interfaces
 
-## 📚 Technology Stack
-
-We will use the VSCode IDE for this course. 
-- **Docker & DevContainers**: Provides a consistent environment (used as a black box)
-- **HTML**: Single file for displaying the game interface
-- **CSS**: Single file for styling and layout
-- **JavaScript**: Single file for game logic and interactivity
-
-**Why this stack?** These technologies teach core programming concepts that transfer to any language or framework. Once you understand variables, functions, and user interaction patterns, you can apply these ideas whether you're building mobile apps, web services, or data analysis tools.
-
-**Future paths**: The thinking patterns you'll develop here translate directly to:
-- **Frontend**: React, Vue, Angular for complex web applications
-- **Backend**: Node.js, Python, Java for server-side development
-- **Mobile**: Swift, Kotlin, React Native for mobile apps
-- **Data**: Python, R, SQL for analysis and machine learning
-
-The language doesn't matter - the problem-solving approach does.
-
-## ❗What We Won't Cover
-
-Given our focus on core thinking patterns, we'll skip:
-- Version control (Git) - important for teams, not for learning logic
-- Deployment - focus is on building, not publishing
-- Testing frameworks - you'll debug by experimentation instead
-- Development workflows - we'll keep it simple and direct
-
-You'll gain the foundational thinking that makes learning these tools straightforward later.
-
 ## 🗺 Course Outline
 - For each week, please see the relevant folder's `README.md` file.
 - Each week's puzzle, etc will be issued on the Monday class.
@@ -137,6 +109,36 @@ Some bullets:
 - I like building things.
 - I spent 10 years building buildings, now I build software. 
 - My specialization is in Backend Systems & Machine Learning.
+
+## FAQ
+
+### What is our Technology Stack for this course? 
+
+We will use the VSCode IDE for this course. 
+- **Docker & DevContainers**: Provides a consistent environment (used as a black box)
+- **HTML**: Single file for displaying the game interface
+- **CSS**: Single file for styling and layout
+- **JavaScript**: Single file for game logic and interactivity
+
+**Why this stack?** These technologies teach core programming concepts that transfer to any language or framework. Once you understand variables, functions, and user interaction patterns, you can apply these ideas whether you're building mobile apps, web services, or data analysis tools.
+
+**Future paths**: The thinking patterns you'll develop here translate directly to:
+- **Frontend**: React, Vue, Angular for complex web applications
+- **Backend**: Node.js, Python, Java for server-side development
+- **Mobile**: Swift, Kotlin, React Native for mobile apps
+- **Data**: Python, R, SQL for analysis and machine learning
+
+The language doesn't matter - the problem-solving approach does.
+
+### What won't we cover? 
+
+Given our focus on core thinking patterns, we'll skip:
+- Version control (Git) - important for teams, not for learning logic
+- Deployment - focus is on building, not publishing
+- Testing frameworks - you'll debug by experimentation instead
+- Development workflows - we'll keep it simple and direct
+
+You'll gain the foundational thinking that makes learning these tools straightforward later.
 
 If it really matters...
 - my LinkedIn: https://www.linkedin.com/in/lennardong/
