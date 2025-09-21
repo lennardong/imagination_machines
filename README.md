@@ -24,34 +24,6 @@ By course completion, students will:
 - [ ] Debug code 
 - [ ] Design and implement simple interactive user interfaces
 
-## 📚 Technology Stack
-
-We will use the VSCode IDE for this course. 
-- **Docker & DevContainers**: Provides a consistent environment (used as a black box)
-- **HTML**: Single file for displaying the game interface
-- **CSS**: Single file for styling and layout
-- **JavaScript**: Single file for game logic and interactivity
-
-**Why this stack?** These technologies teach core programming concepts that transfer to any language or framework. Once you understand variables, functions, and user interaction patterns, you can apply these ideas whether you're building mobile apps, web services, or data analysis tools.
-
-**Future paths**: The thinking patterns you'll develop here translate directly to:
-- **Frontend**: React, Vue, Angular for complex web applications
-- **Backend**: Node.js, Python, Java for server-side development
-- **Mobile**: Swift, Kotlin, React Native for mobile apps
-- **Data**: Python, R, SQL for analysis and machine learning
-
-The language doesn't matter - the problem-solving approach does.
-
-## ❗What We Won't Cover
-
-Given our focus on core thinking patterns, we'll skip:
-- Version control (Git) - important for teams, not for learning logic
-- Deployment - focus is on building, not publishing
-- Testing frameworks - you'll debug by experimentation instead
-- Development workflows - we'll keep it simple and direct
-
-You'll gain the foundational thinking that makes learning these tools straightforward later.
-
 ## 🗺 Course Outline
 - For each week, please see the relevant folder's `README.md` file.
 - Each week's puzzle, etc will be issued on the Monday class.
@@ -60,10 +32,10 @@ You'll gain the foundational thinking that makes learning these tools straightfo
 This is basic setup for the course. 
 Please read through and complete before the first class.
 
-### Week 1: What Does This Thing Do?
-> Ideas as Abstract Machines
+### Week 1: Mapping Ideas as a Machine
+> "What Does This Thing Do?"
 
-**The Mystery**: Students get 3 working code samples (no explanation) and must figure out what each does through experimentation.
+**The Mystery**: Students get 3 working code samples (no explanation) and must figure out what each does through deductive reasoning.
 
 Monday (Do First):
 - 0-45min: Reverse-engineer mystery code samples
@@ -76,8 +48,8 @@ Tuesday (Learn Later):
 
 **Takehome**: Create a system diagram for rock-paper-scissors (no code yet).
 
-### Week 2: Why Won't This Decide?"
-> Logical Machines
+### Week 2: Building Logical Machines
+> "Why Won't This Decide?"
 
 **The Mystery**: Students get broken decision-making code that can't choose rock/paper/scissors properly.
 
@@ -92,8 +64,8 @@ Tuesday (Learn Later):
 
 **Takehome**: Complete rock-paper-scissors logic (console-based)
 
-### Week 3: "Why Can't I Touch It?" 
-> Interacting with an idea
+### Week 3: UI
+> "How do I touch an idea?"
 
 **The Mystery**: Students have working logic but no way for humans to interact with it.
 
@@ -108,9 +80,9 @@ Tuesday (Learn Later):
 
 **Takehome**: Create UI for your game (no logic connection yet)
 
-### Week 4: "Why Are These Two Things Ignoring Each Other?"
-> Connecting the two parts
-
+### Week 4: Connecting the two parts
+> It lives!
+> 
 **The Mystery**: Students have working logic AND working UI, but they don't talk to each other.
 
 Monday (Do First):
@@ -135,10 +107,41 @@ I'm here to share the joy of building things through code with you.
 
 Some bullets:
 - I like building things.
-- I spent 10 years building buildings, now I build software. 
-- My specialization is in Backend Systems & Machine Learning.
+- I used to build buildings, now I build software. 
+- I spend alot of time thinking about software systems and finding patterns in numbers (aka machine learning). 
 
-If it really matters...
-- my LinkedIn: https://www.linkedin.com/in/lennardong/
-- my personal website: https://lennardong.com/
+If it matters to you, you can find more about me here: 
+LinkedIn (https://www.linkedin.com/in/lennardong/)
+Personal Blog (https://lennardong.com/)
+
+## FAQ
+
+### What is our Technology Stack for this course? 
+
+We will use the VSCode IDE for this course. 
+- **Docker & DevContainers**: Provides a consistent environment (used as a black box)
+- **HTML**: Single file for displaying the game interface
+- **CSS**: Single file for styling and layout
+- **JavaScript**: Single file for game logic and interactivity
+
+**Why this stack?** These technologies teach core programming concepts that transfer to any language or framework. Once you understand variables, functions, and user interaction patterns, you can apply these ideas whether you're building mobile apps, web services, or data analysis tools.
+
+**Future paths**: The thinking patterns you'll develop here translate directly to:
+- **Frontend**: React, Vue, Angular for complex web applications
+- **Backend**: Node.js, Python, Java for server-side development
+- **Mobile**: Swift, Kotlin, React Native for mobile apps
+- **Data**: Python, R, SQL for analysis and machine learning
+
+The language doesn't matter - the problem-solving approach does.
+
+### What won't we cover? 
+
+Given our focus on core thinking patterns, we'll skip:
+- Version control (Git) - important for teams, not for learning logic
+- Deployment - focus is on building, not publishing
+- Testing frameworks - you'll debug by experimentation instead
+- Development workflows - we'll keep it simple and direct
+
+You'll gain the foundational thinking that makes learning these tools straightforward later.
+
 
