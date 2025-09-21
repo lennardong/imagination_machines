@@ -172,7 +172,7 @@ User        startChain    captureGuess    checkGuess    displayFeedback
 
 ---
 
-## 📋 End of Day Reflection
+## 📋 End of Tuesday Reflection
 
 **Three things I learned:**
 1. _________________________________
