@@ -1,0 +1,84 @@
+
+<html>
+<head>
+    <title>Mystery Game 2</title>
+    <style>
+        /* Ultra-minimal CSS - 28 lines */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f4f4f9;
+            padding: 40px 20px;
+            margin: 0;
+        }
+        
+        .container {
+            background: white;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+        
+        h1 {
+            color: #5e5e7e;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .status {
+            background: #e8e8f0;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .highlight {
+            color: #7c7c9a;
+            font-weight: 600;
+        }
+        
+        input {
+            padding: 10px;
+            font-size: 16px;
+            width: 100px;
+            margin: 10px;
+        }
+        
+        button {
+            padding: 10px 25px;
+            font-size: 16px;
+            background: #a5a5c7;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+        }
+        
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Number Quest</h1>
+        
+        <div class="status">
+            <div>Round: <span class="highlight" id="round">1</span> of 3</div>
+            <div>Score: <span class="highlight" id="score">0</span> points</div>
+        </div>
+        
+        <div class="center">
+            <p id="message">Guess my number!</p>
+            <input type="number" id="userInput" min="1" max="10">
+            <br>
+            <button onclick="startChain()">Submit Guess</button>
+            <p id="feedback"></p>
+            <p id="attemptsDisplay"></p>
+        </div>
+    </div>
+    
+    <script src="puzzle2.js"></script>
+</body>
+</html>

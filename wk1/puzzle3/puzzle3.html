@@ -1,0 +1,84 @@
+
+<html>
+<head>
+    <title>Mystery Game 3</title>
+    <style>
+        /* Same minimal CSS - 28 lines */
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+        
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: #faf5f5;
+            padding: 40px 20px;
+            margin: 0;
+        }
+        
+        .container {
+            background: white;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+        
+        h1 {
+            color: #8b7355;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .info {
+            background: #f5ebe0;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .value {
+            color: #6b5d54;
+            font-weight: 600;
+        }
+        
+        input {
+            padding: 10px;
+            font-size: 16px;
+            width: 100px;
+            margin: 10px;
+        }
+        
+        button {
+            padding: 10px 25px;
+            font-size: 16px;
+            background: #c9a88c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+        }
+        
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Number Master</h1>
+        
+        <div class="info">
+            <div>Round: <span class="value" id="currentRound">1</span> / 3</div>
+            <div>Points: <span class="value" id="totalScore">0</span></div>
+        </div>
+        
+        <div class="center">
+            <p id="statusMessage">Ready to play?</p>
+            <input type="number" id="playerInput" min="1" max="10">
+            <br>
+            <button onclick="gameController('guess')">Make Guess</button>
+            <p id="resultText"></p>
+            <p id="attemptCount"></p>
+        </div>
+    </div>
+    
+    <script src="puzzle3.js"></script>
+</body>
+</html>

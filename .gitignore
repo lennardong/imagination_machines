@@ -85,3 +85,7 @@ out/
 
 # Live Server
 .vscode-live-server/
+
+# Private files
+.lenn
+lenn
