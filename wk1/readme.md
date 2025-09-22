@@ -6,13 +6,12 @@
 ## 🔍 Puzzle 1: Mystery Game (Read-Only)
 **Time:** 30 minutes  
 **Challenge:** Figure out what this game does WITHOUT running it!
-
 ### Your Detective Tools:
 #### 🎯 Starting Clues - Look For These:
 1. **Variables (Information Storage)**
    - Look for the word `let`
    - What comes after `let` is a container holding information
-   - Write down each variable name and guess what it stores
+   - Write down eachvariable name and guess what it stores
 1. **Functions (Action Blocks)**
    - Look for the word `function`
    - Functions have names that hint at what they do
