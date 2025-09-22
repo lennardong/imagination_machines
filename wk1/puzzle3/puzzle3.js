@@ -1,10 +1,10 @@
-
 // Game data - simple separate variables instead of object
 let gameSecret = 0;
 let gameTries = 0;
 let gamePoints = 0;
 let gameRound = 1;
 let gameRange = 10;
+let gameActive = false;  // Track if a round is in progress
 
 // Initialize game
 gameController('init');
@@ -34,12 +34,19 @@ function initializeGame() {
     
     // Reset round data
     gameTries = 0;
+    gameActive = true;  // Round is now active
     
     // Update display
     updateDisplay();
 }
 
 function processGuess() {
+    // Check if a round is active
+    if (!gameActive) {
+        setMessage("resultText", "Start a new game or go to next round!");
+        return;
+    }
+    
     let input = document.getElementById("playerInput").value;
     
     // Validate input
@@ -117,14 +124,11 @@ function displayResult(result) {
         let attemptsLeft = 3 - gameTries;
         setMessage("statusMessage", attemptsLeft + " attempts remaining");
     }
-    
-    // NOTE: The condition above is the opposite of the one in processGuess():
-    // Here: if (NOT win AND tries < 3) - show attempts remaining
-    // There: if (win OR tries >= 3) - end the round
-    // Same logic, just checking the "continue playing" case instead of "end round" case
 }
 
 function handleRoundEnd(won) {
+    gameActive = false;  // Round is no longer active
+    
     if (won) {
         let earned = (4 - gameTries) * 10;
         gamePoints = gamePoints + earned;
@@ -133,34 +137,38 @@ function handleRoundEnd(won) {
         setMessage("statusMessage", "The number was " + gameSecret);
     }
     
-    // Show continue button instead of automatic timing
+    // Show appropriate message based on game progress
     if (gameRound < 3) {
-        setMessage("resultText", "Click Continue for next round!");
-        
-        // Find the button element
-        let continueButton = document.querySelector("button");
-        // Change the button text
-        continueButton.innerText = "Continue";
-        // Set what happens when clicked
-        continueButton.onclick = continueToNextRound;
+        setMessage("resultText", "Click Next Round to continue!");
     } else {
-        setMessage("resultText", "Click Finish to see final score!");
-        
-        // Find the button element
-        let finishButton = document.querySelector("button");
-        // Change the button text
-        finishButton.innerText = "Finish Game";
-        // Set what happens when clicked
-        finishButton.onclick = finishGame;
+        setMessage("resultText", "All rounds complete! Click End Game.");
     }
 }
 
 function advanceRound() {
+    // Check if we should advance
+    if (gameActive) {
+        // Round still in progress - just end it and move on
+        setMessage("resultText", "Skipping to next round!");
+        gameActive = false;
+    }
+    
+    if (gameRound >= 3) {
+        setMessage("resultText", "All rounds complete! Click End Game.");
+        return;
+    }
+    
     gameRound = gameRound + 1;
+    
+    // Clear the input field for the new round
+    document.getElementById("playerInput").value = "";
+    
     gameController('init');
 }
 
 function concludeGame() {
+    gameActive = false;
+    
     let finalMsg = "Complete! Score: " + gamePoints;
     
     if (gamePoints > 70) {
@@ -172,7 +180,8 @@ function concludeGame() {
     }
     
     setMessage("statusMessage", finalMsg);
-    document.querySelector("button").disabled = true;
+    setMessage("resultText", "Game Over!");
+    setMessage("attemptCount", "");
 }
 
 function updateDisplay() {
@@ -181,18 +190,12 @@ function updateDisplay() {
     setMessage("statusMessage", "Guess 1-" + gameRange);
     setMessage("resultText", "");
     setMessage("attemptCount", "");
+    
+    // Clear input for new round
+    document.getElementById("playerInput").value = "";
 }
 
 // Helper function to update text in elements
 function setMessage(id, text) {
     document.getElementById(id).innerText = text;
-}
-
-// Helper functions for button clicks
-function continueToNextRound() {
-    gameController('nextRound');
-}
-
-function finishGame() {
-    gameController('endGame');
 }

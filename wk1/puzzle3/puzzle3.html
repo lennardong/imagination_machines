@@ -1,4 +1,3 @@
-
 <html>
 <head>
     <title>Mystery Game 3</title>
@@ -73,7 +72,11 @@
             <p id="statusMessage">Ready to play?</p>
             <input type="number" id="playerInput" min="1" max="10">
             <br>
-            <button onclick="gameController('guess')">Make Guess</button>
+            <!-- Multiple buttons for different controller actions -->
+            <button id="btnStart" onclick="gameController('init')">Start Game</button>
+            <button id="btnGuess" onclick="gameController('guess')">Submit Guess</button>
+            <button id="btnNext" onclick="gameController('nextRound')">Next Round</button>
+            <button id="btnEnd" onclick="gameController('endGame')">End Game</button>
             <p id="resultText"></p>
             <p id="attemptCount"></p>
         </div>
