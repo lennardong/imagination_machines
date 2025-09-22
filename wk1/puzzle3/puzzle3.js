@@ -24,15 +24,7 @@ function gameController(action) {
 
 function initializeGame() {
     // Set difficulty based on round
-    if (gameRound === 1) {
-        gameRange = 10;
-    }
-    if (gameRound === 2) {
-        gameRange = 20;
-    }
-    if (gameRound === 3) {
-        gameRange = 30;
-    }
+    gameRange = 10
     
     // Math is built into JavaScript - no import needed!
     // Math.random() gives random decimal 0-1
