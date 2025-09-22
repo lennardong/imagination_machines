@@ -8,6 +8,8 @@ You're about to reverse-engineer mysterious code and debug broken systems. Havin
 
 ### Checklist
 
+Google: `"Setup VSCode with Docker for Windows using WSL2"`
+
 **Setup (do in order), ~1h:**
 - [ ] Create a dedicated class folder: `imagination_machines` somewhere easy to find (Desktop or Documents)
 - [ ] Install VSCode (https://code.visualstudio.com/docs/setup/setup-overview)
