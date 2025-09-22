@@ -10,7 +10,7 @@ You're about to reverse-engineer mysterious code and debug broken systems. Havin
 
 **Setup (do in order), ~1h:**
 - [ ] Create a dedicated class folder: `imagination_machines` somewhere easy to find (Desktop or Documents)
-- [ ] Install VSCode (https://code.visualstudio.com/docs/setup/)
+- [ ] Install VSCode (https://code.visualstudio.com/docs/setup/setup-overview)
 - [ ] Install the "Dev Containers" extension in VSCode
 - [ ] **Windows users only**: Install WSL2 and Docker (links below)
 - [ ] Download the `.devcontainer` and `wk0` folders and place them in your class folder root
