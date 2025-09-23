@@ -319,32 +319,11 @@ Use these to talk with your partner:
 ---
 
 # For Next Week
-## Homework 1: Reading & Reflection
-Read https://www.teamten.com/lawrence/programming/intro/
-Chapters: 1, 2, 3, 10
 
-### Chapter 1 Questions:
-1. **The Time Machine Question**: If you could go back to 1950 and had to explain what a "program" is to someone who's never seen a computer, using only things that existed then (typewriters, recipe cards, telephone operators), how would you do it? Why do you think those analogies work?
+## Homework 0: Review learning Guide
+- See Week 1, there is a new PDF there
 
-2. **The Alien Perspective**: Imagine an alien visits Earth and asks "Why do humans make machines do their thinking for them?" Based on Chapter 1, what would be your answer? What does this tell you about the relationship between human thinking and computer thinking?
-
-### Chapter 2 Questions:
-1. **The Magic Wand Problem**: If you had a magic wand that could change ONE thing about how programming languages work to make them easier for beginners, what would you change and why? What trade-offs might your change create for experienced programmers?
-
-2. **The Teaching Challenge**: Why do you think the author chose the specific examples they did in this chapter? If you were teaching your younger sibling to code, would you use the same examples or different ones? What makes a good first example?
-
-### Chapter 3 Questions:
-- **Step into the mindset of a language designer:** Let’s think about why different programming languages use different symbols or rules for the same idea (like string concatenation). What might language designers be trying to optimize for?
-- **Imagine you’re teaching a robot to follow instructions:** Let’s think about how strict syntax rules in programming compare to the way we use language in everyday conversation. Why do you think computers need such precise instructions?
-- **Shift from natural language to programming language:** Let’s think about how you would explain the concept of “syntax” in programming to someone who’s only ever written in natural languages (like English or Chinese). What examples or analogies would help them understand?
-
-### Chapter 10 Questions:
-- **Shift into the mindset of a systems builder:** Let’s think about why functions are useful in programming. How do they help make your code easier to understand and maintain?
-- **Imagine scaling from a single task to a complex project:** Let’s think about what could go wrong if you don’t use functions and just copy-paste the same code everywhere. What problems might this create as your program gets bigger?
-- **Step into the shoes of a teacher or explainer:** Let’s think about how you would explain the idea of a function to someone who’s never coded before. What real-life examples could you use to help them understand?
----
-
-## 📝 Homework 2: Design Rock-Paper-Scissors
+## 📝 Homework 1: Design Rock-Paper-Scissors
 
 Using what you learned this week, create a diagram for Rock-Paper-Scissors.
 
@@ -414,6 +393,30 @@ Example personal touches:
 - "Computer wins this round, David. Try again!"
 
 Remember: The goal isn't to code this yet - just to THINK about how you'd organize it. Your diagram is your blueprint!
+
+## EXTRA for Curious: Reading & Reflection
+Read https://www.teamten.com/lawrence/programming/intro/
+Chapters: 1, 2, 3, 10
+
+### Chapter 1 Questions:
+1. **The Time Machine Question**: If you could go back to 1950 and had to explain what a "program" is to someone who's never seen a computer, using only things that existed then (typewriters, recipe cards, telephone operators), how would you do it? Why do you think those analogies work?
+
+2. **The Alien Perspective**: Imagine an alien visits Earth and asks "Why do humans make machines do their thinking for them?" Based on Chapter 1, what would be your answer? What does this tell you about the relationship between human thinking and computer thinking?
+
+### Chapter 2 Questions:
+1. **The Magic Wand Problem**: If you had a magic wand that could change ONE thing about how programming languages work to make them easier for beginners, what would you change and why? What trade-offs might your change create for experienced programmers?
+
+2. **The Teaching Challenge**: Why do you think the author chose the specific examples they did in this chapter? If you were teaching your younger sibling to code, would you use the same examples or different ones? What makes a good first example?
+
+### Chapter 3 Questions:
+- **Step into the mindset of a language designer:** Let’s think about why different programming languages use different symbols or rules for the same idea (like string concatenation). What might language designers be trying to optimize for?
+- **Imagine you’re teaching a robot to follow instructions:** Let’s think about how strict syntax rules in programming compare to the way we use language in everyday conversation. Why do you think computers need such precise instructions?
+- **Shift from natural language to programming language:** Let’s think about how you would explain the concept of “syntax” in programming to someone who’s only ever written in natural languages (like English or Chinese). What examples or analogies would help them understand?
+
+### Chapter 10 Questions:
+- **Shift into the mindset of a systems builder:** Let’s think about why functions are useful in programming. How do they help make your code easier to understand and maintain?
+- **Imagine scaling from a single task to a complex project:** Let’s think about what could go wrong if you don’t use functions and just copy-paste the same code everywhere. What problems might this create as your program gets bigger?
+- **Step into the shoes of a teacher or explainer:** Let’s think about how you would explain the idea of a function to someone who’s never coded before. What real-life examples could you use to help them understand?
 
 ---
 
