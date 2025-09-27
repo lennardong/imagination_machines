@@ -1,6 +1,6 @@
 
 // Setting up the game
-let secretNumber = 7;
+let secretNumber = 3;
 let attempts = 0;
 let maxAttempts = 3;
 
@@ -30,13 +30,13 @@ function checkGuess(guess) {
     
     // Compare with secret
     if (guessNumber > secretNumber) {
-        return "Too high!";
+        return guessNumber + "was Too high!";
     }
     if (guessNumber < secretNumber) {
         return "Too low!";
     }
     if (guessNumber === secretNumber) {
-        return "You got it!";
+        return "yay!";
     }
 }
 

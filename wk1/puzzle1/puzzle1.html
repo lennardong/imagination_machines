@@ -3,15 +3,83 @@
 <html>
 <head>
     <title>Mystery Game 1</title>
+    <style>        
+    body {
+            background: burlywood;
+            padding: 40px 20px;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Mystery Game</h1>
+    <h1>The GAME!</h1>
     <div id="gameArea">
-        <p id="message">Welcome to the game!</p>
+        <p id="message">Muahhahahaha to the game!</p>
         <input type="number" id="userInput" min="1" max="10">
         <button onclick="playGame()">Play</button>
         <p id="feedback"></p>
     </div>
-    <script src="puzzle1.js"></script>
+    <!-- <script src="puzzle1.js"></script> -->
+    <script>
+
+    // Setting up the game
+    let secretNumber = 3;
+    let attempts = 0;
+    let maxAttempts = 3;
+
+    function playGame() {
+        // getElementById("userInput") finds the input box by its ID name
+        // .value gets what the player typed inside it
+        let playerGuess = document.getElementById("userInput").value;
+        
+        // Count this attempt
+        attempts = attempts + 1;
+        
+        // Check the guess
+        let result = checkGuess(playerGuess);
+        
+        // Show feedback
+        showMessage(result);
+        
+        // Check if game is over
+        if (attempts >= maxAttempts) {
+            endGame();
+        }
+    }
+
+    function checkGuess(guess) {
+        // Convert text to number
+        let guessNumber = Number(guess);
+        
+        // Compare with secret
+        if (guessNumber > secretNumber) {
+            return guessNumber + "was Too high!";
+        }
+        if (guessNumber < secretNumber) {
+            return "Too low!";
+        }
+        if (guessNumber === secretNumber) {
+            return "yay!";
+        }
+    }
+
+    function showMessage(message) {
+        // getElementById finds the element with id="feedback"
+        let feedbackArea = document.getElementById("feedback");
+        
+        // innerText changes the text inside that element
+        feedbackArea.innerText = message;
+    }
+
+    function endGame() {
+        // querySelector finds the first button element
+        let button = document.querySelector("button");
+        button.disabled = true;
+        
+        // Change the message text
+        document.getElementById("message").innerText = "Game Over! The number was " + secretNumber;
+    }
+        
+    </script>
 </body>
 </html>

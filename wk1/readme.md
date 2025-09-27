@@ -1,4 +1,5 @@
 # Week 1: Code Detective Guide
+
 ## Your Mission: Figure Out What These Games Do!
 
 ---
