@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Week 2, Puzzle 0</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 40px;
+            background: #f9f7f4;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Style the rendered markdown */
+        h1 {
+            color: #8b4513;
+            border-bottom: 2px solid #daa520;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #a0522d;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: #2e8b57;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+
+        pre {
+            background: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            overflow-x: auto;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        #loading {
+            color: #666;
+            font-style: italic;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* Make task sections stand out */
+        h3[id*="task"] {
+            background: #fff8dc;
+            padding: 10px 15px;
+            border-left: 4px solid #daa520;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="readme-content">
+        <div id="loading">Loading instructions...</div>
+    </div>
+
+    <script>
+        // Fetch and render README.md
+        fetch('./README.md')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Could not load README.md');
+                }
+                return response.text();
+            })
+            .then(markdown => {
+                document.getElementById('readme-content').innerHTML = marked.parse(markdown);
+            })
+            .catch(error => {
+                document.getElementById('readme-content').innerHTML =
+                    '<h1>Instructions</h1>' +
+                    '<p><strong>Error:</strong> Could not load README.md file.</p>' +
+                    '<p>Please make sure you\'re using Live Preview and the README.md file exists.</p>' +
+                    '<h2>Quick Start:</h2>' +
+                    '<ol>' +
+                    '<li>Open browser console (F12)</li>' +
+                    '<li>Try: <code>isFresh("banana")</code></li>' +
+                    '<li>Try: <code>help()</code></li>' +
+                    '</ol>';
+            });
+    </script>
+
+    <script src="puzzle0.js"></script>
+</body>
+</html>

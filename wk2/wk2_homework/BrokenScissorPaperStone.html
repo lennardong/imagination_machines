@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Paper Scissors Game</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: #f0f8ff;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .game-info {
+            background: #ecf0f1;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .score-display {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .score-box {
+            background: #3498db;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            min-width: 100px;
+        }
+
+        .choice-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .choice-btn {
+            padding: 15px 25px;
+            font-size: 18px;
+            background: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            min-width: 100px;
+        }
+
+        .choice-btn:hover {
+            background: #c0392b;
+        }
+
+        .control-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .control-btn:hover {
+            background: #229954;
+        }
+
+        .result-area {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            border-radius: 5px;
+            min-height: 100px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .value {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        #gameStatus {
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        .debug-info {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🪨📄✂️ Rock Paper Scissors</h1>
+
+        <div class="game-info">
+            <div>Round: <span class="value" id="currentRound">1</span> / <span class="value" id="maxRounds">5</span></div>
+        </div>
+
+        <div class="score-display">
+            <div class="score-box">
+                <div>You</div>
+                <div class="value" id="playerScore">0</div>
+            </div>
+            <div class="score-box">
+                <div>Computer</div>
+                <div class="value" id="computerScore">0</div>
+            </div>
+        </div>
+
+        <div class="center">
+            <div id="gameStatus">Choose your move!</div>
+
+            <div class="choice-buttons">
+                <button class="choice-btn" onclick="playRound('rock')">🪨 Rock</button>
+                <button class="choice-btn" onclick="playRound('paper')">📄 Paper</button>
+                <button class="choice-btn" onclick="playRound('scissors')">✂️ Scissors</button>
+            </div>
+        </div>
+
+        <div class="result-area">
+            <div id="roundResult">Ready to play? Click a button above!</div>
+            <div id="choicesDisplay"></div>
+        </div>
+
+        <div class="center">
+            <button class="control-btn" onclick="startNewGame()">🔄 New Game</button>
+            <button class="control-btn" onclick="showInstructions()">❓ Help</button>
+        </div>
+
+        <!-- Debug area for console output (will be hidden by default) -->
+        <div id="debugArea" class="debug-info" style="display: none;">
+            <strong>Console Debug Info:</strong>
+            <div id="debugOutput"></div>
+        </div>
+
+        <div class="center" style="margin-top: 20px;">
+            <button class="control-btn" onclick="toggleDebug()">🔧 Toggle Debug View</button>
+        </div>
+    </div>
+
+    <script src="BrokenScissorPaperStone.js"></script>
+</body>
+</html>
