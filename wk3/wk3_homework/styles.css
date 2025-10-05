@@ -1,0 +1,177 @@
+/* Week 3 Homework - Rock Paper Scissors Game Styling */
+/* Simple baseline styling - you'll enhance this for your homework! */
+
+/*
+🎨 WELCOME TO YOUR CSS WORKSPACE! 🎨
+
+This is where you'll transform the rock-paper-scissors game into something beautiful.
+Follow the homework challenges in the README.md file.
+
+WORKFLOW:
+1. Edit this CSS file
+2. Save the file (Ctrl+S or Cmd+S)
+3. Refresh your browser to see changes
+4. Repeat until you love how it looks!
+
+Remember: The game already works perfectly - focus on making it beautiful! ✨
+*/
+
+/* ===== BASE STYLES ===== */
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container {
+    background: white;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* ===== HEADINGS ===== */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* ===== HOMEWORK INSTRUCTIONS ===== */
+.homework-note {
+    background: #d1ecf1;
+    border: 1px solid #bee5eb;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    color: #0c5460;
+}
+
+.homework-note h3 {
+    margin-top: 0;
+    color: #0c5460;
+}
+
+/* ===== GAME INFO SECTION ===== */
+.game-info {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* ===== SCORE DISPLAY ===== */
+.score-display {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.score-box {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 100px;
+}
+
+/* ===== GAME STATUS ===== */
+.game-status {
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+/* ===== CHOICE BUTTONS ===== */
+.choice-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.choice-btn {
+    padding: 15px 25px;
+    font-size: 18px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.choice-btn:hover {
+    background: #218838;
+}
+
+/* ===== RESULT AREA ===== */
+.result-area {
+    background: #f8f9fa;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    border-radius: 5px;
+    min-height: 80px;
+}
+
+/* ===== CONTROL BUTTONS ===== */
+.control-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.control-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.control-btn:hover {
+    background: #545b62;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.value {
+    font-weight: bold;
+}
+
+/* ===== STYLING CHALLENGE AREAS ===== */
+/* Students will modify and enhance these sections:
+
+1. Color Theme Challenge:
+   - Change color schemes throughout
+   - Update .score-box, .choice-btn, .control-btn backgrounds
+   - Modify .homework-note, .game-info, .result-area colors
+
+2. Typography Challenge:
+   - Update font-family choices
+   - Adjust font-size, font-weight properties
+   - Improve text hierarchy
+
+3. Button Enhancement Challenge:
+   - Modify .choice-btn and .control-btn styling
+   - Add better hover effects
+   - Improve spacing and padding
+
+4. Layout Challenge:
+   - Adjust .container styling
+   - Improve .score-display layout
+   - Enhance spacing with margin/padding
+
+5. Visual Polish Challenge:
+   - Add box-shadow effects
+   - Implement border-radius improvements
+   - Create visual feedback for interactions
+
+*/

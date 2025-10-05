@@ -1,0 +1,104 @@
+/* Example styling for Day 1 - shows one possible outcome */
+
+/* Reset and base styles */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0px;
+    padding: 20px;
+    background-color: #f8f4e6;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* Main heading */
+h1 {
+    color: #8e44ad;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Section headings */
+h2 {
+    color: #27ae60;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #27ae60;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #e74c3c;
+    font-size: 1.4em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: #3498db;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+/* Hero section styling */
+.hero-section {
+    background-color: #e8f5e8;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    text-align: center;
+    border: 3px solid #27ae60;
+}
+
+/* Content sections */
+.play-info {
+    background-color: #fff2e6;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border-left: 5px solid #e74c3c;
+}
+
+.cast-section {
+    background-color: #e6f3ff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+.character {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #3498db;
+}
+
+.ticket-info {
+    background-color: #f0e6ff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px dashed #8e44ad;
+}
+
+.footer {
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #bdc3c7;
+}
+
+/* Typography enhancements */
+p {
+    margin-bottom: 12px;
+}
+
+strong {
+    color: #2c3e50;
+    font-weight: bold;
+}

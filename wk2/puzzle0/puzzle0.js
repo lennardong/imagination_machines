@@ -17,7 +17,7 @@ console.log("=================================");
 // This function checks if an ingredient is fresh
 function isFresh(ingredient) {
     // List of fresh items in the kitchen
-    let freshItems = ["banana", "apple", "lettuce", "tomato", "carrot", "milk"];
+    let freshItems = ["banana", "apple", "lettuce", "tomato", "carrot", "milk", "students"];
 
     // Check if no ingredient was provided
     if (ingredient === undefined) {
@@ -46,9 +46,10 @@ function isFresh(ingredient) {
 // BUG: It uses the wrong comparison!
 function isOvenHotEnough(temperature) {
     let minimumTemp = 180;
+    let maxTemp = 1000
 
     // BUG: This comparison is backwards! //FLAG: OVEN_LOGIC_BUG
-    if (temperature < minimumTemp) {
+    if (temperature > minimumTemp) {
         return "Oven is hot enough!";
     } else {
         return "Oven needs to heat up more.";
@@ -71,7 +72,7 @@ function countIngredients(list) {
     }
 
     // BUG: Adding 1 to the count for some reason! //FLAG: COUNT_MATH_BUG
-    let total = list.length + 1;  // <- Why add 1?
+    let total = list.length+ 1;  // <- Why add 1?
 
     console.log("You have " + total + " ingredients");
 
@@ -84,10 +85,14 @@ function countIngredients(list) {
 
 // This function returns the wrong recipe name!
 function getRecipeName() {
-    let recipeName = "Chocolate Cake";
+    let todaysDishBoard = "Chocolate Cake";
 
     // BUG: Returning the wrong thing! //FLAG: RECIPE_RETURN_BUG
-    return "Vanilla Cake";  // <- Should return recipeName instead!
+    // retu
+    // retu
+    return todaysDishBoard
+    return "Chocolate Cake"
+    // return "Vanilla Cake";  // <- Should return recipeName instead!
 }
 
 // ============================================

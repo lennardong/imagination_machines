@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Paper Scissors Game - Ready for Styling!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🪨📄✂️ Rock Paper Scissors</h1>
+
+        <div class="homework-note">
+            <h3>Week 3 Homework Challenge!</h3>
+            <p><strong>Mission:</strong> Style this game to make it beautiful! All bugs from Week 2 have been fixed.</p>
+            <p><strong>Your task:</strong> Use CSS to transform this functional game into a visual masterpiece.</p>
+        </div>
+
+        <div class="game-info">
+            <div>Round: <span class="value" id="currentRound">1</span> / <span class="value" id="maxRounds">5</span></div>
+        </div>
+
+        <div class="score-display">
+            <div class="score-box">
+                <div>You</div>
+                <div class="value" id="playerScore">0</div>
+            </div>
+            <div class="score-box">
+                <div>Computer</div>
+                <div class="value" id="computerScore">0</div>
+            </div>
+        </div>
+
+        <div class="game-status">
+            <div id="gameStatus">Choose your move!</div>
+        </div>
+
+        <div class="choice-buttons">
+            <button class="choice-btn" onclick="playRound('rock')">🪨 Rock</button>
+            <button class="choice-btn" onclick="playRound('paper')">📄 Paper</button>
+            <button class="choice-btn" onclick="playRound('scissors')">✂️ Scissors</button>
+        </div>
+
+        <div class="result-area">
+            <div id="roundResult">Ready to play? Click a button above!</div>
+            <div id="choicesDisplay"></div>
+        </div>
+
+        <div class="control-buttons">
+            <button class="control-btn" onclick="startNewGame()">🔄 New Game</button>
+            <button class="control-btn" onclick="showInstructions()">❓ Help</button>
+        </div>
+
+        <div class="homework-note">
+            <h3>Styling Opportunities:</h3>
+            <ul>
+                <li>🎨 <strong>Colors & Themes:</strong> Create a cohesive color scheme</li>
+                <li>📝 <strong>Typography:</strong> Choose fonts and improve text hierarchy</li>
+                <li>🎯 <strong>Buttons:</strong> Style the choice and control buttons</li>
+                <li>📐 <strong>Layout:</strong> Improve spacing and organization</li>
+                <li>✨ <strong>Polish:</strong> Add hover effects and visual feedback</li>
+            </ul>
+            <p><em>Remember: The game works perfectly - focus on making it beautiful!</em></p>
+        </div>
+    </div>
+
+    <script src="FixedScissorPaperStone.js"></script>
+</body>
+</html>

@@ -18,11 +18,27 @@ console.log("=================================");
 // This should return true if we can make a sandwich
 // BUG: It always returns the wrong answer!
 function canMakeSandwich(hasBread, hasFilling) {
+    // VERSION 1
     // Check if we have both ingredients
     if (hasBread && hasFilling) {
         return false;  // BUG: This should return true! //FLAG: SANDWICH_LOGIC_BUG
     } else {
         return true;   // BUG: This should return false! //FLAG: SANDWICH_ELSE_BUG
+    }
+    // VERSION 2
+    // Step 1: Check if we have bread
+    if (hasBread === true) {
+        // Step 2: If we have bread, check if we have filling
+        if (hasFilling === true) {
+            // Both ingredients available - we can make a sandwich!
+            return true;
+        } else {
+            // Have bread but no filling - can't make sandwich
+            return false;
+        }
+    } else {
+        // No bread - definitely can't make a sandwich
+        return false;
     }
 }
 
@@ -48,7 +64,10 @@ function isVegetarian(dishName) {
     }
     if (dishName === "pork chops") {
         return true;  // BUG: Pork is NOT vegetarian! //FLAG: PORK_VEG_BUG
+    } else {
+        return true
     }
+
 
     // If it's not a meat dish, it must be vegetarian
     return false;  // BUG: This should return true for vegetarian dishes! //FLAG: VEG_DEFAULT_BUG

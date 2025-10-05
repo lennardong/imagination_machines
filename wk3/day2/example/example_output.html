@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Midsummer Night's Dream - Interactive Complete</title>
+    <link rel="stylesheet" href="example_styles.css">
+</head>
+<body>
+    <h1>A Midsummer Night's Dream</h1>
+
+    <div class="hero-section">
+        <h2>Welcome to Our Magical School Production!</h2>
+        <p>Join us for an enchanting evening of Shakespeare's most beloved comedy. Our talented students bring the fairy realm to life with music, laughter, and wonder.</p>
+    </div>
+
+    <div class="play-info">
+        <h3>About the Play</h3>
+        <p>A Midsummer Night's Dream is a comedy written by William Shakespeare. The play follows the adventures of four young lovers, a group of amateur actors, and the fairies who inhabit a moonlit forest.</p>
+
+        <h3>Performance Details</h3>
+        <p><strong>Dates:</strong> November 15-17, 2024</p>
+        <p><strong>Time:</strong> 7:30 PM</p>
+        <p><strong>Location:</strong> School Auditorium</p>
+        <p><strong>Tickets:</strong> $10 for adults, $5 for students</p>
+    </div>
+
+    <!-- Fully Interactive Character Section -->
+    <div class="interactive-section">
+        <h3>Meet Our Characters</h3>
+        <p>Click on a character to learn more about them!</p>
+
+        <div class="character-buttons">
+            <button onclick="showCharacter('hermia')" class="active">Hermia</button>
+            <button onclick="showCharacter('lysander')">Lysander</button>
+            <button onclick="showCharacter('puck')">Puck</button>
+            <button onclick="showCharacter('bottom')">Bottom</button>
+        </div>
+
+        <div id="character-display">
+            <h4>Hermia</h4>
+            <p><strong>Played by:</strong> Sarah Johnson</p>
+            <p><strong>About:</strong> A determined young woman in love with Lysander. She's brave and willing to defy her father's wishes for true love.</p>
+            <p><strong>Famous Quote:</strong> "The course of true love never did run smooth."</p>
+        </div>
+    </div>
+
+    <!-- Enhanced Theme Section -->
+    <div class="theme-section">
+        <h3>Choose Your Theme</h3>
+        <button onclick="changeTheme('magical')" class="theme-btn">🧚‍♀️ Magical Theme</button>
+        <button onclick="changeTheme('forest')" class="theme-btn">🌲 Forest Theme</button>
+        <button onclick="changeTheme('royal')" class="theme-btn active">👑 Royal Theme</button>
+    </div>
+
+    <div class="ticket-info">
+        <h3>Get Your Tickets!</h3>
+        <p>Tickets are available at the school office or online. Don't miss this magical performance!</p>
+        <p>Contact us: theater@school.edu or (555) 123-4567</p>
+
+        <!-- Enhanced contact form -->
+        <div class="contact-form">
+            <h4>Quick Contact</h4>
+            <input type="text" id="visitor-name" placeholder="Your Name" value="">
+            <button onclick="showPersonalizedMessage()">Get Personalized Message</button>
+            <div id="personal-message">
+                <p>🎭 Welcome! We hope you enjoy our magical production!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Directed by Ms. Thompson | Music by Mr. Garcia | Set Design by Art Club</p>
+        <button onclick="showDebugInfo()">🔧 Show Debug Info</button>
+        <div id="debug-info" style="display: block;">
+            <strong>Debug Information:</strong><br>
+            Current Theme: royal<br>
+            Debug Mode: true<br>
+            Last Updated: 2:15:30 PM<br>
+            Available Characters: hermia, lysander, puck, bottom<br>
+            Total Characters: 4
+        </div>
+    </div>
+
+    <script src="example_script.js"></script>
+</body>
+</html>

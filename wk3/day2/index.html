@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Midsummer Night's Dream - Interactive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>A Midsummer Night's Dream</h1>
+
+    <div class="hero-section">
+        <h2>Welcome to Our Magical School Production!</h2>
+        <p>Join us for an enchanting evening of Shakespeare's most beloved comedy. Our talented students bring the fairy realm to life with music, laughter, and wonder.</p>
+    </div>
+
+    <div class="play-info">
+        <h3>About the Play</h3>
+        <p>A Midsummer Night's Dream is a comedy written by William Shakespeare. The play follows the adventures of four young lovers, a group of amateur actors, and the fairies who inhabit a moonlit forest.</p>
+
+        <h3>Performance Details</h3>
+        <p><strong>Dates:</strong> November 15-17, 2024</p>
+        <p><strong>Time:</strong> 7:30 PM</p>
+        <p><strong>Location:</strong> School Auditorium</p>
+        <p><strong>Tickets:</strong> $10 for adults, $5 for students</p>
+    </div>
+
+    <!-- Interactive Character Section - Students will add JavaScript here -->
+    <div class="interactive-section">
+        <h3>Meet Our Characters</h3>
+        <p>Click on a character to learn more about them!</p>
+
+        <div class="character-buttons">
+            <button onclick="showCharacter('hermia')">Hermia</button>
+            <button onclick="showCharacter('lysander')">Lysander</button>
+            <button onclick="showCharacter('puck')">Puck</button>
+            <button onclick="showCharacter('bottom')">Bottom</button>
+        </div>
+
+        <div id="character-display">
+            <p>Click a character button above to see their information!</p>
+        </div>
+    </div>
+
+    <!-- Theme Toggle Section -->
+    <div class="theme-section">
+        <h3>Choose Your Theme</h3>
+        <button onclick="changeTheme('magical')">🧚‍♀️ Magical Theme</button>
+        <button onclick="changeTheme('forest')">🌲 Forest Theme</button>
+        <button onclick="changeTheme('royal')">👑 Royal Theme</button>
+    </div>
+
+    <div class="ticket-info">
+        <h3>Get Your Tickets!</h3>
+        <p>Tickets are available at the school office or online. Don't miss this magical performance!</p>
+        <p>Contact us: theater@school.edu or (555) 123-4567</p>
+
+        <!-- Interactive contact form -->
+        <div class="contact-form">
+            <h4>Quick Contact</h4>
+            <input type="text" id="visitor-name" placeholder="Your Name">
+            <button onclick="showPersonalizedMessage()">Get Personalized Message</button>
+            <div id="personal-message"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Directed by Ms. Thompson | Music by Mr. Garcia | Set Design by Art Club</p>
+        <button onclick="showDebugInfo()">🔧 Show Debug Info</button>
+        <div id="debug-info" style="display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

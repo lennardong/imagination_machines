@@ -84,6 +84,11 @@ function canFulfillOrder(orderQuantity, availablePortions) {
     console.log("Comparing: '" + orderQuantity + "' <= " + availablePortions);
 
     // BUG: String comparison doesn't work like number comparison! //FLAG: TYPE_COMPARISON_BUG
+    //
+    orderQuantity = Number(orderQuantity)
+    console.log("recast order: " + typeof orderquantity)
+    console.log("order: " + '"orderquantity"')
+    
     if (orderQuantity <= availablePortions) {
         return "✅ Order confirmed for " + orderQuantity + " portions";
     } else {

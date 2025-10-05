@@ -30,19 +30,19 @@ function validateOrder(dishName, quantity, customerAllergy) {
     };
 
     // Bug 1: Wrong variable name (case matters!) //FLAG: CASE_SENSITIVE_BUG
-    let dish = menu[dishname];  // BUG: JavaScript is case-sensitive!
+    let dish = menu[dishName];  // BUG: JavaScript is case-sensitive!
 
     if (!dish) {
         return "❌ Dish not on menu. Try 'pasta', 'salad', or 'soup'";
     }
 
     // Bug 2: Wrong comparison //FLAG: AVAILABILITY_COMPARISON_BUG
-    if (quantity < dish.available) {  // BUG: Should this be < or > ?
+    if (quantity > dish.available) {  // BUG: Should this be < or > ?
         return "❌ Sorry, not enough available. We have " + dish.available + " portions.";
     }
 
     // Bug 3: Backwards allergy logic //FLAG: ALLERGY_LOGIC_BUG
-    if (dish.contains.includes(customerAllergy)) {
+    if (!dish.contains.includes(customerAllergy)) {
         return "✅ Order confirmed!";  // BUG: This is dangerous!
     }
 

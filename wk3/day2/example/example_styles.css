@@ -1,0 +1,299 @@
+/* Example complete styling for Day 2 - fully interactive version */
+
+/* Base styles with enhanced interactivity */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f4e6;
+    color: #2c3e50;
+    line-height: 1.6;
+    transition: all 0.5s ease;
+}
+
+/* Enhanced heading styles */
+h1 {
+    color: #8e44ad;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 2px 2px 4px rgba(0,0,0,0.1); }
+    to { text-shadow: 2px 2px 8px rgba(142,68,173,0.3); }
+}
+
+h2 {
+    color: #27ae60;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #27ae60;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #e74c3c;
+    font-size: 1.4em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: #3498db;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+/* Enhanced interactive section */
+.interactive-section {
+    background-color: #e8f5e8;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 3px solid #27ae60;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.character-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.character-buttons button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.character-buttons button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.character-buttons button.active {
+    background-color: #27ae60;
+    transform: translateY(-1px);
+}
+
+#character-display {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #3498db;
+    min-height: 120px;
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Enhanced theme section */
+.theme-section {
+    background-color: #f0e6ff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.theme-section .theme-btn {
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.theme-section .theme-btn:hover {
+    background-color: #7d3c98;
+    transform: scale(1.05);
+}
+
+.theme-section .theme-btn.active {
+    background-color: #e74c3c;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Enhanced contact form */
+.contact-form {
+    background-color: white;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: 1px solid #bdc3c7;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.contact-form input {
+    padding: 10px;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.contact-form button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #229954;
+    transform: translateY(-1px);
+}
+
+#personal-message {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #d5f4e6;
+    border-radius: 5px;
+    border-left: 4px solid #27ae60;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Other enhanced sections */
+.hero-section {
+    background-color: #e8f5e8;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    text-align: center;
+    border: 3px solid #27ae60;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.play-info {
+    background-color: #fff2e6;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border-left: 5px solid #e74c3c;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.ticket-info {
+    background-color: #f0e6ff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px dashed #8e44ad;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.footer {
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #bdc3c7;
+}
+
+.footer button {
+    background-color: #95a5a6;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.footer button:hover {
+    background-color: #7f8c8d;
+}
+
+#debug-info {
+    background-color: #fff3cd;
+    border: 1px solid #ffeaa7;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 12px;
+    text-align: left;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from { height: 0; opacity: 0; }
+    to { height: auto; opacity: 1; }
+}
+
+/* Enhanced theme variations */
+.magical-theme {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.magical-theme .interactive-section,
+.magical-theme .hero-section {
+    background-color: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.3);
+}
+
+.forest-theme {
+    background: linear-gradient(135deg, #74b816 0%, #8fbc8f 100%);
+    color: #2c3e50;
+}
+
+.forest-theme .interactive-section,
+.forest-theme .hero-section {
+    background-color: rgba(255,255,255,0.2);
+    border-color: #228b22;
+}
+
+.royal-theme {
+    background: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
+    color: #4a4a4a;
+}
+
+.royal-theme .interactive-section,
+.royal-theme .hero-section {
+    background-color: rgba(255,255,255,0.3);
+    border-color: #daa520;
+}
+
+.royal-theme h1 {
+    color: #8b4513;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
